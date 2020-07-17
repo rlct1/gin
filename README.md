@@ -7,7 +7,7 @@ This is the Pytorch implementation of our Deep Generative Inpainting Network (GI
 - (left: masked image, right: our completed image) 
 <p align='center'>  
   <img src='examples/AIM_IC_t1_validation_0_with_holes.png' width='256'/>
-  <img src='examples/test/AIM_IC_t1_validation_0.png' width='256'/>
+  <img src='examples/AIM_IC_t1_validation_0.png' width='256'/>
 </p>
 
 ## Preparation 
