@@ -35,8 +35,8 @@ cd gin
 
 ## Testing 
 - An example of the validation data of this challenge is provided in the `datasets/ade20k/test` folder 
-- Our trained model on the modified ADE20K dataset is also provided in the `checkpoints/gin` folder 
-- For reproducing the test results for this challenge, please put all the testing images in the `datasets/ade20k/test` folder
+- Please download our trained model for this challenge [here](https://drive.google.com/file/d/1yOtMELWwTBc-PMSY69x1FH8D1anUN7tD/view?usp=sharing) (google drive link), and put it under `checkpoints/gin/`
+- For reproducing the test results for this challenge, please put all the testing images under `datasets/ade20k/test/`
 - You can test our model by typing: 
 ```bash
 python test_ensemble.py --name gin 
@@ -44,11 +44,12 @@ python test_ensemble.py --name gin
 - The test results will be stored in `results/test` folder 
 - If you would like to test on other datasets, please refer to the file structure in the `datasets/ade20k/test` folder 
 - Note that the file structure is for AIM20 IC Track 1 
+- You can download our test results for this challenge [here](https://drive.google.com/file/d/1EJgQ3neOA2WkZMmG6uG0GG14VoLYmNFg/view?usp=sharing) (google drive link)
 
 ## Training 
 - By default, our model is trained using two GPUs 
 - Examples of the training images from this challenge is provided in the `datasets/ade20k/train` folder 
-- If you would like to train a model using our warm up for initialization, 
+- If you would like to train a model using our warm up for initialization, please download our warm up for this challenge [here](https://drive.google.com/file/d/1T3ST-ujhtDZQpWUiagICOAIvBF7CMeYz/view?usp=sharing) (google drive link), and put it under `checkpoints/warmup/`
 ```bash
 python train.py --name yourmodel --continue_train --load_pretrain './checkpoints/warmup' 
 ```
