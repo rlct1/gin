@@ -3,7 +3,8 @@ For AIM2020 ECCV Extreme Image Inpainting Track 1 Classic <br>
 This is the Pytorch implementation of our Deep Generative Inpainting Network (GIN) for Extreme Image Inpainting. We have participated in AIM 2020 ECCV Extreme Image Inpainting Challenge. Our GIN is used for reconstructing a completed image with satisfactory visual quality from a randomly masked image. <br><br> 
 
 ## Example of Image Inpainting using our GIN 
-- An example from the validation set of the AIM20 ECCV Extreme Image Inpainting Track 1 Classic (left: masked image, right: our completed image) 
+- An example from the validation set of the AIM20 ECCV Extreme Image Inpainting Track 1 Classic
+- (left: masked image, right: our completed image) 
 <p align='center'>  
   <img src='examples/AIM_IC_t1_validation_0_with_holes.png' width='256'/>
   <img src='examples/test/AIM_IC_t1_validation_0.png' width='256'/>
@@ -35,6 +36,7 @@ cd gin
 ## Testing 
 - An example of the validation data of this challenge is provided in the `datasets/ade20k/test` folder 
 - Our trained model on the modified ADE20K dataset is also provided in the `checkpoints/gin` folder 
+- For reproducing the test results for this challenge, please put all the testing images in the `datasets/ade20k/test` folder
 - You can test our model by typing: 
 ```bash
 python test_ensemble.py --name gin 
