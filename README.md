@@ -4,7 +4,7 @@ This is the Pytorch implementation of our Deep Generative Inpainting Network (GI
 
 ## Overview
 <p align='center'>  
-  <img src='examples/arc.png' width='640'/>
+  <img src='examples/arc.png' width='768'/>
 </p>
 
 ## Example of Image Inpainting using our GIN 
