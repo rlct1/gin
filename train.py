@@ -101,6 +101,7 @@ for epoch in range(start_epoch, opt.niter + opt.niter_decay + 1):
         # update Generator parameters 
         optimizer_G.zero_grad() 
         loss_G.backward() 
+        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=3, norm_type=2)
         optimizer_G.step()
 
         # update Discriminator parameters 
