@@ -4,7 +4,11 @@ This is the Pytorch implementation of our Deep Generative Inpainting Network (GI
 
 ## Overview
 <p align='center'>  
-  <img src='examples/arc.png' width='768'/>
+  <img src='examples/architecture.png' width='768'/>
+</p>
+- Our Spatial Pyramid Dilation (SPD) block
+<p align='center'>  
+  <img src='examples/spd_resnetblk.png' width='768'/>
 </p>
 
 ## Example of Image Inpainting using our GIN 
@@ -63,6 +67,20 @@ python train.py --name yourmodel --continue_train --load_pretrain './checkpoints
 python train.py --name yourmodel 
 ```
 - If you would like to train a model based on your own selection and resources, please refer to the `options/base_options.py` and `options/train_options.py` for details 
+
+## Experiments
+- Ablation Study
+<p align='center'>  
+  <img src='examples/ablation_study.png' width='768'/>
+</p>
+- Comparisons
+<p align='center'>  
+  <img src='examples/comparisons_ffhq_oxford.png' width='768'/>
+</p>
+- Visualization of predicted semantic segmentation map
+<p align='center'>  
+  <img src='examples/visualization_seg.png' width='768'/>
+</p>
 
 ## Acknowledgment 
 Our code is developed based on the skeleton of the Pytorch implementation of [pix2pixHD](https://github.com/NVIDIA/pix2pixHD)
