@@ -6,7 +6,7 @@ This is the Pytorch implementation of our Deep Generative Inpainting Network (GI
 <p align='center'>  
   <img src='examples/architecture.png' width='768'/>
 </p>
-- Our Spatial Pyramid Dilation (SPD) block
+Our Spatial Pyramid Dilation (SPD) block
 <p align='center'>  
   <img src='examples/spd_resnetblk.png' width='768'/>
 </p>
@@ -69,15 +69,15 @@ python train.py --name yourmodel
 - If you would like to train a model based on your own selection and resources, please refer to the `options/base_options.py` and `options/train_options.py` for details 
 
 ## Experiments
-- Ablation Study
+Ablation Study
 <p align='center'>  
   <img src='examples/ablation_study.png' width='768'/>
 </p>
-- Comparisons
+Comparisons
 <p align='center'>  
   <img src='examples/comparisons_ffhq_oxford.png' width='768'/>
 </p>
-- Visualization of predicted semantic segmentation map
+Visualization of predicted semantic segmentation map
 <p align='center'>  
   <img src='examples/visualization_seg.png' width='768'/>
 </p>
