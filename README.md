@@ -82,6 +82,19 @@ Visualization of predicted semantic segmentation map
   <img src='examples/visualization_seg.png' width='768'/>
 </p>
 
+## Citation
+Thanks for visiting our project page, if it is useful, please cite our paper,
+'''
+@misc{li2020deepgin,
+    title={DeepGIN: Deep Generative Inpainting Network for Extreme Image Inpainting},
+    author={Chu-Tak Li and Wan-Chi Siu and Zhi-Song Liu and Li-Wen Wang and Daniel Pak-Kong Lun},
+    year={2020},
+    eprint={2008.07173},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+'''
+
 ## Acknowledgment 
 Our code is developed based on the skeleton of the Pytorch implementation of [pix2pixHD](https://github.com/NVIDIA/pix2pixHD)
 
