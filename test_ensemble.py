@@ -67,7 +67,7 @@ for i, data in enumerate(dataset):
         
         ###
         resized_img = __make_power_2(oimg) 
-        resized_msk = __make_power_2(omsk) 
+        resized_msk = __make_power_2(omsk, method=Image.BILINEAR) 
         rw, rh = resized_img.size 
 
         hori_ver = rw // 256 
@@ -81,6 +81,11 @@ for i, data in enumerate(dataset):
 
         np_resized_img = np.array(resized_img, np.uint8)
         np_resized_msk = np.array(resized_msk, np.uint8)
+        np_resized_msk = np_resized_msk > 0
+        np_resized_img[:,:,0] = np_resized_img[:,:,0] * (1 - np_resized_msk) + 255 * np_resized_msk
+        np_resized_img[:,:,1] = np_resized_img[:,:,1] * (1 - np_resized_msk) + 255 * np_resized_msk
+        np_resized_img[:,:,2] = np_resized_img[:,:,2] * (1 - np_resized_msk) + 255 * np_resized_msk
+        np_resized_msk = np_resized_msk * 255
 
         img_arr = []
         msk_arr = [] 
